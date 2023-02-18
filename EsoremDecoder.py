@@ -46,3 +46,7 @@ def decode_eserem(eserem):
         else:
             output += eserem_dict[eser]
     return output
+
+if __name__ == "__main__":
+    userInput = input("Provide Eserem string pls: \n")
+    print(decode_eserem(userInput))
