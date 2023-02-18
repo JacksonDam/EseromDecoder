@@ -1,4 +1,4 @@
-eserem_dict = {
+esorem_dict = {
     "10" : "A",
     "0111" : "B",
     "0101" : "C",
@@ -37,16 +37,16 @@ eserem_dict = {
     "00000" : "0"
 }
 
-def decode_eserem(eserem):
-    split_eserem = eserem.split(" ")
+def decode_eserem(esorem):
+    split_esorem = esorem.split(" ")
     output = ""
-    for eser in split_eserem:
-        if eser == '':
+    for esor in split_esorem:
+        if esor == '':
             output += ' '
         else:
-            output += eserem_dict[eser]
+            output += esorem_dict[eser]
     return output
 
 if __name__ == "__main__":
-    userInput = input("Provide Eserem string pls: \n")
-    print(decode_eserem(userInput))
+    userInput = input("Provide Esorem string pls: \n")
+    print(decode_esorem(userInput))
