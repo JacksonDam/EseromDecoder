@@ -37,14 +37,14 @@ esorem_dict = {
     "00000" : "0"
 }
 
-def decode_eserem(esorem):
+def decode_esorem(esorem):
     split_esorem = esorem.split(" ")
     output = ""
     for esor in split_esorem:
         if esor == '':
             output += ' '
         else:
-            output += esorem_dict[eser]
+            output += esorem_dict[esor]
     return output
 
 if __name__ == "__main__":
